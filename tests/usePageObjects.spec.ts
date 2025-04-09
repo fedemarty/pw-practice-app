@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('/')
 })
 
-test('navigate from page @smokenpm s', async({page}) => {
+test('navigate from page @smoke', async({page}) => {
     const pm = new PageManager(page)
     await pm.navigateTo().formLayoutsPage()
     await pm.navigateTo().datepickerPage()
@@ -26,5 +26,11 @@ test('parametrized methods', async({page}) => {
 
 })
 
+test('testing with argos ci', async({page}) => {
+    const pm = new PageManager(page)
+    await pm.navigateTo().formLayoutsPage()
+    await pm.navigateTo().datepickerPage()
+
+})
 
 
