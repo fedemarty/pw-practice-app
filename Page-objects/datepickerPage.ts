@@ -16,7 +16,7 @@ export class DatepickerPage extends HelperBase{
 
     async selectDatepickerWithRangeFromToday(startDayFromToday: number, endDayFromToday: number){
         const calendarInputField = this.page.getByPlaceholder('Range Picker')
-        await calendarInputField.click()
+        //await calendarInputField.click()
         const dateToAssertStart = await this.selectDateInTheCalendar(startDayFromToday)
         const dateToAssertEnd = await this.selectDateInTheCalendar(endDayFromToday)
         const dateToAssert = `${dateToAssertStart} - ${dateToAssertEnd}`
