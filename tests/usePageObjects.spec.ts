@@ -32,7 +32,7 @@ test('testing with argos ci', async({page}) => {
     await pm.navigateTo().formLayoutsPage()
     await argosScreenshot(page, "form layouts page")
     await pm.navigateTo().datepickerPage()
-    await argosScreenshot(page, "form datepicker page")
+    await argosScreenshot(page, "datepicker page")
 })
 
 
